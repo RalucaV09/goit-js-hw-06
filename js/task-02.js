@@ -1,5 +1,4 @@
-document.addEventListener("DOMContentLoaded", function() {
-  const ingredients = [
+const ingredients = [
     "Potatoes",
     "Mushrooms",
     "Garlic",
@@ -7,14 +6,12 @@ document.addEventListener("DOMContentLoaded", function() {
     "Herbs",
     "Condiments",
   ];
+  const ul = document.getElementById("ingredients");
 
-  const ulIngredients = document.getElementById("ingredients");
-
-  ingredients.forEach(ingredient => {
+  ingredients.forEach((ingredient) => {
     const li = document.createElement("li");
     li.textContent = ingredient;
     li.classList.add("item");
-    ulIngredients.appendChild(li);
+    ul.appendChild(li);
   });
-});
 
