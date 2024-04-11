@@ -6,11 +6,16 @@ const ingredients = [
   'Herbs',
   'Condiments',
 ];
-const ulIngredients = document.getElementById("ingredients");
 
-ingredients.forEach(ingredient => {
-  const li = document.createElement("li");
-  li.textContent = ingredient;
-  li.classList.add("item");
-  ulIngredients.appendChild(li);
+const ingredientsList = document.getElementById("ingredients");
+
+ingredients.forEach((ingredient) => {
+  // Creăm un element <li>
+  const listItem = document.createElement("li");
+
+  listItem.textContent = ingredient;
+
+  listItem.classList.add("item");
+
+  ingredientsList.appendChild(listItem);
 });
