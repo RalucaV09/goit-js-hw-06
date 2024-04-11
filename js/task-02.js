@@ -9,11 +9,11 @@ const ingredients = [
 
 const ingredientsList = document.getElementById("ingredients");
 
-ingredients.forEach((ingredient) => {
+ingredients.forEach((ingredients) => {
   // Creăm un element <li>
   const listItem = document.createElement("li");
 
-  listItem.textContent = ingredient;
+  listItem.textContent = ingredients;
 
   listItem.classList.add("item");
 
